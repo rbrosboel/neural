@@ -43,7 +43,10 @@ net.train(data, {
     onEpoch: (context) => {
         net.test(data, {onComplete: context => {
             progress.step()
-            context.epochError < .01 && runner.stop()
+            if (context.epochError < .01) {
+                runner.stop()
+                flowChart.render()
+            }
         }})
     },
 })
