@@ -1,11 +1,11 @@
+document.body.classList.add('loaded')
+
 const {
     NeuralNetwork,
     Matrix,
     AsyncRunner,
     NetworkProgress,
 } = neural
-
-document.body.classList.remove('loading')
 
 const pixels = 28
 
@@ -71,6 +71,7 @@ net = new NeuralNetwork({
 })
 .addLayer(pixels*pixels)
 .addLayer(64)
+.addLayer(32)
 .addLayer(10)
 
 const runner = new AsyncRunner(net).start()

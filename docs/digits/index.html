@@ -12,23 +12,31 @@
     </style>
 </head>
 
-<body class="loading">
-    <h1>Recognize digits using a neural network</h1>
-    <div class="card">
-        <h2>Training</h2>
-        <div id="progress"></div>
-    </div>
-    <div class="row">
-        <div class="col card">
-            <h2>Wrong</h2>
-            <div class="content">
-                <canvas id="digitWrong" class="digit"></canvas>
-            </div>
+<body>
+    <header>
+        <h1>Recognize digits using a neural network</h1>
+        <p>
+            <a href="https://github.com/rbrosboel/neural">https://github.com/rbrosboel/neural</a>
+        </p>
+    </header>
+    <div class="loader"></div>
+    <div class="loading">
+        <div class="card">
+            <h2>Training</h2>
+            <div id="progress"></div>
         </div>
-        <div class="col card">
-            <h2>Correct</h2>
-            <div class="content">
-                <canvas id="digitCorrect" class="digit"></canvas>
+        <div class="row">
+            <div class="col card">
+                <h2>Wrong</h2>
+                <div class="content">
+                    <canvas id="digitWrong" class="digit"></canvas>
+                </div>
+            </div>
+            <div class="col card">
+                <h2>Correct</h2>
+                <div class="content">
+                    <canvas id="digitCorrect" class="digit"></canvas>
+                </div>
             </div>
         </div>
     </div>

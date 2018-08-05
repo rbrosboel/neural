@@ -3,7 +3,18 @@ body {
     margin: 0 auto;
     padding: 0 24px 24px;
     font-family: sans-serif;
-    color: #333;
+    color: #222;
+    background: #fbfbfb;
+}
+
+header {
+    padding: 24px 0 0px;
+}
+header h1 {
+    margin: 0;
+}
+a {
+    color: #226;
 }
 
 .row {
@@ -21,7 +32,7 @@ body {
 .card {
     margin-top: 24px;
     border: 1px solid #ddd;
-    box-shadow: 0 1px 3px #ddd8;
+    background: #fff;
 }
 .card h2 {
     margin: 0;
@@ -85,4 +96,19 @@ body {
 #twoInOneOut {
     width: 200px;
     height: 200px;
+}
+
+.loader {
+    width: 66px;
+    height: 66px;
+    background: url("loader.gif");
+}
+.loading {
+    display: none;
+}
+.loaded .loader {
+    display: none;
+}
+.loaded .loading {
+    display: block;
 }

@@ -1,3 +1,5 @@
+document.body.classList.add('loaded')
+
 const {
     NeuralNetwork,
     Matrix,
