@@ -17,8 +17,8 @@ In short, the basics are here for playing around with deep learning on small pro
 The core functionality has no external dependencies.
 
 ## Examples
-- XOR: The hello world of neural networks
-- Digits: Classify handwritten digits using a [subset](https://github.com/cazala/mnist) of the [MNIST database](http://yann.lecun.com/exdb/mnist/)
+- [XOR](https://rbrosboel.github.io/neural/xor/): The hello world of neural networks
+- [Digits](https://rbrosboel.github.io/neural/digits/): Classify handwritten digits using a [subset](https://github.com/cazala/mnist) of the [MNIST database](http://yann.lecun.com/exdb/mnist/)
 
 ## Limitations
 This project is educational and driven purely by curiosity. It is not intended to compete with the myriad of implementations out there.
