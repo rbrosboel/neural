@@ -7,14 +7,43 @@ body {
     background: #fbfbfb;
 }
 
+.loader {
+    width: 66px;
+    height: 66px;
+    margin: 24px auto;
+    background: url("loader.gif");
+}
+.loading {
+    display: none;
+}
+.loaded .loader {
+    display: none;
+}
+.loaded .loading {
+    display: block;
+}
+
 header {
     padding: 24px 0 0px;
+    vertical-align: center;
 }
 header h1 {
     margin: 0;
 }
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+header a img {
+    margin-right: 4px;
+}
 a {
-    color: #226;
+    color: #222;
+}
+.github {
+    width: 18px;
+    height: 18px;
 }
 
 .row {
@@ -96,19 +125,4 @@ a {
 #twoInOneOut {
     width: 200px;
     height: 200px;
-}
-
-.loader {
-    width: 66px;
-    height: 66px;
-    background: url("loader.gif");
-}
-.loading {
-    display: none;
-}
-.loaded .loader {
-    display: none;
-}
-.loaded .loading {
-    display: block;
 }
