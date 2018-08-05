@@ -17,7 +17,7 @@ const data = [
     {input: Matrix.fromArray([0, 1]), target: Matrix.fromArray([1])},
 ]
 
-net = new NeuralNetwork({
+const net = new NeuralNetwork({
     activationFunction: 'tanh',
     onEvaluate: (context, sample, activation) => {
         return sample.target.toArray()[0] == Math.round(activation.toArray()[0])

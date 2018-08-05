@@ -61,7 +61,7 @@ data.test = data.test.map(digit => ({
     target: Matrix.fromArray(digit.output),
 }))
 
-net = new NeuralNetwork({
+const net = new NeuralNetwork({
     activationFunction: 'leaky',
     onEvaluate: (context, sample, activation) => {
         const correct = sample.target.max().row == activation.max().row
