@@ -1,0 +1,88 @@
+body {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px 24px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+.row {
+    display: flex;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 24px;
+}
+.col:first-child {
+    margin-left: 0;
+}
+.card {
+    margin-top: 24px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px #ddd8;
+}
+.card h2 {
+    margin: 0;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 16px;
+}
+
+#progress {
+    min-height: 534px;
+}
+#progress-stats {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    background: #333;
+    color: #eee;
+}
+#progress-graph,
+#progress-graph canvas {
+    width: 100%;
+    height: 450px;
+}
+#progress-graph {
+    border-top: 1px solid #eee;
+    background: #fdfdfd;
+    overflow: hidden;
+}
+#progress-stats ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#progress-stats ul li {
+    padding: 16px;
+    min-width: 100px;
+}
+#progress-stats .stat .value {
+    margin-top: 4px;
+    font-size: 1.382em;
+}
+
+#flowChart,
+#flowChart-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#twoInOneOut {
+    width: 200px;
+    height: 200px;
+}

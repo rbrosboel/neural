@@ -1,0 +1,27 @@
+{
+  "name": "neural",
+  "version": "1.0.0",
+  "description": "Neural Network",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-web-module",
+    "clean": "nwb clean-module"
+  },
+  "dependencies": {
+    "withCanvas": "github:rbrosboel/withCanvas"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "nwb": "0.21.x"
+  },
+  "author": "",
+  "homepage": "",
+  "license": "MIT",
+  "repository": ""
+}

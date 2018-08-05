@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Digits</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .digit {
+            width: 100%;
+            display: block;
+            margin: 16px auto;
+        }
+    </style>
+</head>
+
+<body class="loading">
+    <div class="card">
+        <h2>Training</h2>
+        <div id="progress"></div>
+    </div>
+    <div class="row">
+        <div class="col card">
+            <h2>Wrong</h2>
+            <div class="content">
+                <canvas id="digitWrong" class="digit"></canvas>
+            </div>
+        </div>
+        <div class="col card">
+            <h2>Correct</h2>
+            <div class="content">
+                <canvas id="digitCorrect" class="digit"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="mnist.js"></script>
+    <script src="../../umd/neural.js"></script>
+    <script src="digits.js"></script>
+</body>
+</html>
