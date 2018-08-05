@@ -1,3 +1,5 @@
 /node_modules
 npm-debug.log*
 *.json
+/neural.sublime-project
+/neural.sublime-workspace
